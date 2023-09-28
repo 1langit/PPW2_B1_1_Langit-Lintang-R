@@ -11,24 +11,10 @@
     <h1>Data Barang</h1>
     <table class="table">
         <thead>
-            <tr>
-                <td>ID</td>
-                <td>Nama barang</td>
-                <td>Harga</td>
-                <td>Stok</td>
-                <td>ID Suplier</td>
-            </tr>
+            @yield('header')
         </thead>
         <tbody>
-            @foreach ($data_barang as $barang)
-                <tr>
-                    <td>{{ $barang->id }}</td>
-                    <td>{{ $barang->nama_barang }}</td>
-                    <td>{{ $barang->harga }}</td>
-                    <td>{{ $barang->stok }}</td>
-                    <td>{{ $barang->id_suplier }}</td>
-                </tr>
-            @endforeach
+            @yield('barang')
         </tbody>
     </table>
 </body>
